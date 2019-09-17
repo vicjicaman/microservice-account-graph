@@ -1,6 +1,6 @@
 {
   "name": "@nebulario/microservice-account-graph",
-  "version": "1.70.0-account-page-prod",
+  "version": "1.70.2-master",
   "description": "GraphQL api for inner account manipulation",
   "main": "src/index.js",
   "repository": "github.com:vicjicaman/microservice-account-graph.git",
