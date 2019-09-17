@@ -10,7 +10,8 @@ const schema = [
   }
 
   type AccountMutations {
-    add (username:String!, email: String!, password:String!): Account!
+    create (username:String!, email: String!, password:String!): Account!
+    delete (username:String!): Boolean
   }
 `
 ];
@@ -31,7 +32,6 @@ const compare = (password, user) =>
 const resolvers = {
   AccountQueries: {
     check: async (viewer, { username, password }, cxt) => {
-
       const curr = await Account.Model.findOne({
         username
       });
@@ -48,7 +48,7 @@ const resolvers = {
       })
   },
   AccountMutations: {
-    add: async (viewer, { username, email, password }, cxt) => {
+    create: async (viewer, { username, email, password }, cxt) => {
       const curr = await Account.Model.findOne({
         username
       });
@@ -63,6 +63,18 @@ const resolvers = {
         password
       });
       return await added.save();
+    },
+    delete: async (viewer, { username }, cxt) => {
+      const curr = await Account.Model.findOne({
+        username
+      });
+
+      if (!curr) {
+        throw new Error("ACCOUNT_DOESNT_EXIST");
+      }
+
+      await curr.remove();
+      return true;
     }
   }
 };
