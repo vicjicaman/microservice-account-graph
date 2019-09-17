@@ -14,6 +14,7 @@ ModelSchema.pre('save', async function(next) {
   const salt = bcrypt.genSaltSync(saltRounds)
   const passwordHash = bcrypt.hashSync(this.password, salt)
   this.password = passwordHash;
+  this.created_at = new Date;
   next();
 });
 
@@ -26,7 +27,7 @@ const Schema = [
     username: String!
     name: String
     email: String!
-    created_at: DateTime
+    created_at: DateTime!
   }
   `
 ]
