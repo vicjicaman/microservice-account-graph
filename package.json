@@ -1,6 +1,6 @@
 {
   "name": "@nebulario/microservice-account-graph",
-  "version": "1.70.0-data-reconnect-realm-prod",
+  "version": "1.70.4-master",
   "description": "GraphQL api for inner account manipulation",
   "main": "src/index.js",
   "repository": "github.com:vicjicaman/microservice-account-graph.git",
@@ -9,7 +9,7 @@
   "dependencies": {
     "@babel/runtime": "^7.6.0",
     "@babel/runtime-corejs3": "^7.6.0",
-    "@nebulario/microservice-graph-common": "1.70.0-data-reconnect-realm-prod",
+    "@nebulario/microservice-graph-common": "1.70.1-master",
     "@nebulario/microservice-utils": "1.70.0-master",
     "bcryptjs": "^2.4.3",
     "dotenv": "^7.0.0",
