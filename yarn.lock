@@ -671,9 +671,14 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@nebulario/microservice-graph-common@link:../microservice-graph-common":
-  version "0.0.0"
-  uid ""
+"@nebulario/microservice-graph-common@1.70.0-data-reconnect-realm-prod":
+  version "1.70.0-data-reconnect-realm-prod"
+  resolved "https://registry.yarnpkg.com/@nebulario/microservice-graph-common/-/microservice-graph-common-1.70.0-data-reconnect-realm-prod.tgz#122393887d20246f7f2de06cf01800449ba9159b"
+  integrity sha512-XlZZFWFm+pWHDb0wx7NT8+5jJhzjAvpzuoKtKBgKfhEfXN//2/aHqdiQPu9jAZ6G1mSSkhf0JyQ7AfQSzGuBYw==
+  dependencies:
+    "@babel/runtime" "^7.6.0"
+    "@babel/runtime-corejs3" "^7.6.0"
+    "@nebulario/microservice-utils" "1.70.0-master"
 
 "@nebulario/microservice-utils@1.70.0-master":
   version "1.70.0-master"
