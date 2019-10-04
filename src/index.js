@@ -1,9 +1,10 @@
 require("dotenv").config();
+const mongoose = require("mongoose");
 const express = require("express");
 const graphqlHTTP = require("express-graphql");
 const { makeExecutableSchema } = require("graphql-tools");
 const { schema: rootSchema, resolvers: rootResolvers } = require("./schema");
-const mongoose = require("mongoose");
+
 import * as GraphCommon from "@nebulario/microservice-graph-common";
 import * as Utils from "@nebulario/microservice-utils";
 
@@ -13,8 +14,10 @@ const ACCOUNT_INTERNAL_PORT_GRAPH = process.env["ACCOUNT_INTERNAL_PORT_GRAPH"];
 
 (async () => {
   const cxt = { mongoose };
-
-  GraphCommon.Data.connect({ mongoose, url: AUTH_DATA_INTERNAL_URL }, cxt);
+  await GraphCommon.Data.connect(
+    { mongoose, url: AUTH_DATA_INTERNAL_URL },
+    cxt
+  );
 
   var app = express();
 
@@ -38,7 +41,8 @@ const ACCOUNT_INTERNAL_PORT_GRAPH = process.env["ACCOUNT_INTERNAL_PORT_GRAPH"];
   );
 })();
 
-Utils.Process.shutdown(() => {
+Utils.Process.shutdown(signal => {
   console.log("Closing connection");
   mongoose.connection.close();
+  console.log("Shutdown " + signal);
 });
