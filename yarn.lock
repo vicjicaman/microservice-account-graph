@@ -671,14 +671,9 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@nebulario/microservice-graph-common@1.70.1-master":
-  version "1.70.1-master"
-  resolved "https://registry.yarnpkg.com/@nebulario/microservice-graph-common/-/microservice-graph-common-1.70.1-master.tgz#cd59f25810328bb3a3ac6077b27c9f1afba6b869"
-  integrity sha512-M0bSb6OQDGe+WRRrB+7vQHZ1xqXERQPOsAoQER0vSoC+/i3N4N9S22nR0qeLiIJdTyHoiN9g6nQWRgGmA5YIUQ==
-  dependencies:
-    "@babel/runtime" "^7.6.0"
-    "@babel/runtime-corejs3" "^7.6.0"
-    "@nebulario/microservice-utils" "1.70.0-master"
+"@nebulario/microservice-graph-common@link:../microservice-graph-common":
+  version "0.0.0"
+  uid ""
 
 "@nebulario/microservice-utils@1.70.0-master":
   version "1.70.0-master"
