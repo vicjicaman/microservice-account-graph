@@ -671,9 +671,17 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@nebulario/microservice-graph-common@link:../microservice-graph-common":
-  version "0.0.0"
-  uid ""
+"@nebulario/microservice-graph-common@1.70.0-blog-comments-prod":
+  version "1.70.0-blog-comments-prod"
+  resolved "https://registry.yarnpkg.com/@nebulario/microservice-graph-common/-/microservice-graph-common-1.70.0-blog-comments-prod.tgz#53688f81457005c5a49a2bb8f7cd24b6cbab22e9"
+  integrity sha512-jbYZE5Sfs5kRGSC76kU+9x6QAtPnHLEuuzGm4+R1xMg1x7hV8dHLFiY39plWs2hx9ayoBOAyMexWYHb1wCwE2w==
+  dependencies:
+    "@babel/runtime" "^7.6.0"
+    "@babel/runtime-corejs3" "^7.6.0"
+    "@nebulario/microservice-utils" "1.70.0-master"
+    amqplib "^0.5.5"
+    async-redis "^1.1.7"
+    uuid "^3.3.3"
 
 "@nebulario/microservice-logger@1.70.0-master":
   version "1.70.0-master"
