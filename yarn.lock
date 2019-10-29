@@ -671,10 +671,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@nebulario/microservice-graph-common@1.70.0-blog-comments-prod":
-  version "1.70.0-blog-comments-prod"
-  resolved "https://registry.yarnpkg.com/@nebulario/microservice-graph-common/-/microservice-graph-common-1.70.0-blog-comments-prod.tgz#53688f81457005c5a49a2bb8f7cd24b6cbab22e9"
-  integrity sha512-jbYZE5Sfs5kRGSC76kU+9x6QAtPnHLEuuzGm4+R1xMg1x7hV8dHLFiY39plWs2hx9ayoBOAyMexWYHb1wCwE2w==
+"@nebulario/microservice-graph-common@1.70.3-master":
+  version "1.70.3-master"
+  resolved "https://registry.yarnpkg.com/@nebulario/microservice-graph-common/-/microservice-graph-common-1.70.3-master.tgz#81a94c312254215e8d83a4fea4de54373694a324"
+  integrity sha512-PfQ0GCgFXhSCacAFeSkKvX0Qjb2zvilt6G7ei6HrW5/jwCXvFOtHNuwHopz11VjCXwNintP27qRm1zwjsfN0Bg==
   dependencies:
     "@babel/runtime" "^7.6.0"
     "@babel/runtime-corejs3" "^7.6.0"
