@@ -68,6 +68,7 @@ cxt.logger = Logger.create({ path: ENV_LOG_FOLDER }, cxt);
       schema: schema,
       graphiql: true,
       context: {
+        ...cxt,
         request
       }
     }))

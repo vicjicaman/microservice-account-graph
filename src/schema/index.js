@@ -10,13 +10,13 @@ const schema = [
   type Viewer {
     id: ID
     username: String
-    account: AccountQueries
+    accounts: AccountQueries
   }
 
   type ViewerMutations {
     id: ID
     username: String
-    account: AccountMutations
+    accounts: AccountMutations
   }
 
   type Query {
@@ -44,10 +44,10 @@ const resolvers = {
     viewer: (parent, args, cxt) => getViewer(cxt)
   },
   Viewer:{
-    account: viewer => viewer
+    accounts: viewer => viewer
   },
   ViewerMutations:{
-    account: viewer => viewer
+    accounts: viewer => viewer
   }
 };
 

@@ -671,17 +671,9 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@nebulario/microservice-graph-common@1.70.3-master":
-  version "1.70.3-master"
-  resolved "https://registry.yarnpkg.com/@nebulario/microservice-graph-common/-/microservice-graph-common-1.70.3-master.tgz#81a94c312254215e8d83a4fea4de54373694a324"
-  integrity sha512-PfQ0GCgFXhSCacAFeSkKvX0Qjb2zvilt6G7ei6HrW5/jwCXvFOtHNuwHopz11VjCXwNintP27qRm1zwjsfN0Bg==
-  dependencies:
-    "@babel/runtime" "^7.6.0"
-    "@babel/runtime-corejs3" "^7.6.0"
-    "@nebulario/microservice-utils" "1.70.0-master"
-    amqplib "^0.5.5"
-    async-redis "^1.1.7"
-    uuid "^3.3.3"
+"@nebulario/microservice-graph-common@link:../microservice-graph-common":
+  version "0.0.0"
+  uid ""
 
 "@nebulario/microservice-logger@1.70.0-master":
   version "1.70.0-master"
@@ -3758,6 +3750,11 @@ redis-commands@^1.2.0, redis-commands@^1.3.1:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/redis-commands/-/redis-commands-1.5.0.tgz#80d2e20698fe688f227127ff9e5164a7dd17e785"
   integrity sha512-6KxamqpZ468MeQC3bkWmCB1fp56XL64D4Kf0zJSwDZbVLLm7KFkoIcHrgRvQ+sk8dnhySs7+yBg94yIkAK7aJg==
+
+redis-lock@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/redis-lock/-/redis-lock-0.1.4.tgz#e83590bee22b5f01cdb65bfbd88d988045356272"
+  integrity sha512-7/+zu86XVQfJVx1nHTzux5reglDiyUCDwmW7TSlvVezfhH2YLc/Rc8NE0ejQG+8/0lwKzm29/u/4+ogKeLosiA==
 
 redis-parser@^2.6.0:
   version "2.6.0"
