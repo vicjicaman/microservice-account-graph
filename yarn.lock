@@ -671,10 +671,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@nebulario/microservice-graph-common@1.70.1-auth-linker-update-prod":
-  version "1.70.1-auth-linker-update-prod"
-  resolved "https://registry.yarnpkg.com/@nebulario/microservice-graph-common/-/microservice-graph-common-1.70.1-auth-linker-update-prod.tgz#9d78871b6990ac710dcfe93cb87d8afd9658994b"
-  integrity sha512-oeJgaX9S7gmK0FT4xxacFir3bKJojk2LHR5rKz+kKkXPKdMlmBk+godUxr8bDnzTYKlZwSBsvx2qyWPKSzkU7Q==
+"@nebulario/microservice-graph-common@1.70.4-master":
+  version "1.70.4-master"
+  resolved "https://registry.yarnpkg.com/@nebulario/microservice-graph-common/-/microservice-graph-common-1.70.4-master.tgz#2bfe94eb59d0d25ef0021dee0159e61087603c5f"
+  integrity sha512-ksJZIQzbh0NER6m5n7FEdxhvDIrIOr1zPB34oeAKZwd7umnoXtEg9cxvf8n1Q9piEosPT3h3TuzxRbydtuGt3Q==
   dependencies:
     "@babel/runtime" "^7.6.0"
     "@babel/runtime-corejs3" "^7.6.0"
